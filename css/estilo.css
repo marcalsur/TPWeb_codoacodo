@@ -5,6 +5,20 @@ box-sizing: border-box;
 font-family: 'Roboto', sans-serif;
 }
 body{
-font-size: 1em; /*le coloco esas medidas y estilo de letras como para no olvidarnos que debemos hacerlo*/
-
+font-size: 1em; /*le coloco esas medidas y estilo de letras como para no olvidarnos que debemos hacerlo*/}
+header{}
+nav{
+ background-color: black;
+  height:56px;
+  text-align: center;
+  padding-top: 20px;
 }
+li,a{
+  color:orange;
+  display: inline;
+  padding: 50px;
+  text-decoration:none;
+font-weight: bolder;
+  font-size: 18px;
+}
+
