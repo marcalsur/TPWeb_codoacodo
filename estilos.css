@@ -1,122 +1,104 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@300;400;700&display=swap');
 *{
     margin: 0;
-    padding: 0;
+    padding: 0%;
     box-sizing: border-box;
-      
 }
-
-html{
-	font-size:62.5%;          /*Hacemos que 1rem sea equivalente a 10px*/
-}
-
-header{
-    display: grid;
-    background-color: rgb(125, 56, 50);
-    width: 100%;
-    height: 125px; /*ver si es mejor otra escala*/
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: 50% 50%;
+body{
+    position: absolute;
+    left:0px;
+    top:0px;
+    z-index:-1;
+    font-family: 'Antonio', sans-serif;
     align-items: center;
-    
-    
+    justify-content: center;
+    padding: 30px;
+ min-height: 100vh;
+ width: 100%;
+ display:flex;
+ text-decoration: none;
+ color: white;
 }
 
-#logo{
-    grid-column: 1/3;
-    grid-row: 1/3;
-    text-align: center;
-        
+
+.form{
+    background-color: #fff;
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+     
 }
-
-.logo2{
-    width: 150px;
-    height: 90%;
-    
-}
-
-#nav{
-    grid-column: 3/6;
-    grid-row: 1/3;
-    word-wrap: break-word;
-    word-spacing: 3rem; /*espacio entre palabras*/
-    
-}
-
-.menu{
-    font-family: 'Roboto Condensed', sans-serif;
-    text-decoration: none;
-    color: white;
-    font-weight: 400;
-    font-size: 1.8rem;
-    letter-spacing: 1.2px; /*espacio entre letras*/
-    
-
-}
-
-.menu:hover{
-    color: peru;
-    font-weight: 400;
-    transition: all 0.5s ease;
-    
-}
-
-#imagenes{
+.form_container{
+    justify-self: left;
+    align-self: center;
     width: 100%;
-    height: 600px;
-    position: relative;
-    display: block;
-    margin: 0 auto;
-}
-
-#empanada {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-
-}
-
-
-
-#eslogan{
-    color: white;
-    font-size: 6rem;
-    font-style: oblique;
-    text-shadow: 0px 0px 13px rgb(0 0 0 / 62%);
-    letter-spacing: .5px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    max-width:1000px;
+    display: grid;
+    gap: 1em;
+   
     
-
 }
-
-.btn-wsp{
-    position: fixed;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    bottom: 30px;
-    right: 30px;
-    background: green;
-    color: white;
-    border-radius: 50px;
+.form_title{
+    justify-self: left;
+    align-self: center;
     text-align: center;
-    font-size: 30px;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-    z-index: 100;
+    background-color: rgb(79, 177, 184);
+    font-size: 1.9rem;
+    margin-bottom: .4em;
+   
+}
+.form_input{
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid #bbb0bb;
+    border-radius: 0.2em;
+   
+}
+ .form_input--message{
+resize: none;
+padding: 1.8em 1em;
+margin-bottom: .5em;
+
+
 }
 
-.btn-wsp:hover{
-    text-decoration: none;
-    color: green;
-    background: white;
+.form_cta{
+    font-family: inherit;
+    background-color: #089fe0;
+    color: #fff;
+    border: none;
+    font-weight: 300;
+    padding: .7em 0;
+    border-radius: .2em;
+    cursor: pointer;
+    font-weight: 400;
+  
+
+}
+.share{
+    display: flex;
+    justify-content: center;
+   
+}
+.share a{
+    margin: 0 5px;
+    padding: 10px;
+    border-radius: 0 5px 5px 5px;
+    text-decoration: none; 
+    float:left;
+    grid-template-columns: auto auto auto;
+    justify-self: space-around;
 }
 
+@media (max-width: 450px) {
+    .form{ 
+padding: 3.5em 1em;
 
+    }
+}
