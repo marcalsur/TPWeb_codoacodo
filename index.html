@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Silkscreen&family=Source+Sans+Pro:wght@200&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="favicon/icono.ico" type="image/x-icon">
+    <title>Empanadas Mayoristas - Empanadas & Pizzas</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img class="logo2" src="img/logo_trans_blanco_claro.png" alt="Logo">
+
+        </div>
+
+        <input type="checkbox" id="menu-check">
+        <label id="menu" for="menu-check">
+            <span id="menu-abrir">&#9776; Menú</span>
+            <span id="menu-cerrar">&#9776; Cerrar</span>
+        </label>
+
+        <nav id="nav">
+            <!-- <a class="menu" href="index.html">INICIO</a>
+            <a class="menu" href="#empanadas">EMPANADAS</a>
+            <a class="menu" href="#pizzas">PIZZAS</a>
+            <a class="menu" href="">NOSOTROS</a>
+            <a class="menu" href="">SUCURSALES</a>
+            <a class="menu" href="">CONTACTO</a> -->
+            <ul>
+                <li><a class="menu" href="index.html">INICIO</a></li>
+                <li><a class="menu" href="#listaempanadas">EMPANADAS</a></li>
+                <li><a class="menu" href="#listapizzas">PIZZAS</a></li>
+                <li><a class="menu" href="">NOSOTROS</a></li>
+                <li><a class="menu" href="">SUCURSALES</a></li>
+                <li><a class="menu" href="">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="imagenes">
+        <!--class cross para transicion de imagenes en archivo js-->
+        <img class="cross" id="empanada" src="img/empa2.jpg" alt="Empanada">
+        <img class="cross" id="empanada" src="img/Pizza.jpg" alt="Pizza2">
+        <img class="cross" id="empanada" src="img/Local.jpg" alt="Local">
+        <div id="eslogan">MÁS SABOR POR MENOS PRECIO</div>
+        <script src="js/transicion.js"></script>
+    </div>
+
+    <div id="listaempanadas">
+        
+        <img id="fondoempanadas" src="img/Fondo_empanadas.jpeg" alt="FondoEmpanada">
+        <img id="albahaca" src="img/Albahaca.jpg" alt="Albahaca">
+        <div class="titulos" id="tituloempanada">EMPANADAS</div>
+        <ul id="clasicas">
+            <li id="titulos2" class="listado">Clásicas</li>
+            <li class="listado">Carne</li>
+            <li class="listado">Carne Picante</li>
+            <li class="listado">Pollo</li>
+            <li class="listado">Verdura</li>
+            <li class="listado">Humita</li>
+            <li class="listado">Jamón y Queso</li>
+            <li class="listado">Queso y Cebolla</li>
+            <li class="listado">Calabaza con Queso</li>
+        </ul>
+        <ul id="especiales">
+            <li id="titulos2" class="listado">Especiales</li>
+            <li class="listado">Cheese Burguer</li>
+            <li class="listado">Bondiolita Argenta</li>
+            <li class="listado">Cebolla y Queso Llorona</li>
+            <li class="listado">Chori y Chimi</li>
+            <li class="listado">Jamón y Queso Zarpada</li>
+            <li class="listado">Atún</li>
+            <li class="listado">Cantimpalo</li>
+            <li class="listado">Roquefort con Jamón</li>
+        </ul>
+        <!--<div id="imagenempa">
+            <img src="img/toppng.com-empanadas-empanadas-de-carne-461x197.png" alt="">    
+        </div>-->
+        
+
+    </div>
+
+    <div id="listapizzas">
+        
+        <img id="pizza" src="img/Pizza_fondo.png" alt="">
+        <div class="titulos" id="titulopizza">PIZZAS</div>
+        <ul id="pizzas1">
+            <li class="listado" id="titulos2">Gustos</li>
+            <li class="listado">Muzzarella</li>
+            <li class="listado">Muzzarella con jamón</li>
+            <li class="listado">Muzzarella con jamón y morrones</li>
+            <li class="listado">Muzzarella con jamón, tomate y huevo</li>
+            <li class="listado">Napolitana</li>
+            <li class="listado">Napolitana con jamón</li>
+            <li class="listado">Provolone</li>
+            <li class="listado">Provolone con jamón</li>
+            <li class="listado">Provolone especial (con jamón y tomate)</li>
+            <li class="listado">Calabresa</li>
+        </ul>
+        <ul id="pizzas2">
+            <li class="listado">Calabresa con tomate</li>
+            <li class="listado">Calabresa especial (con morrón y huevo)</li>
+            <li class="listado">Fugazza</li>
+            <li class="listado">Fugazzeta</li>
+            <li class="listado">Fugazzeta con jamón</li>
+            <li class="listado">La Completa (jamón, muzzarella, huevo, tomate y morrón) <br><br></li>
+            <li class="listado" id="titulos2">Porciones</li>
+            <li class="listado">Fainá</li>
+            <li class="listado">Fugazzeta Rellena</li>
+        </ul>
+    </div>
+
+    <div id="sucursales">
+        <div class="logosucursal">
+            <img id="imagensucursal" src="img/4544852_business_comerce_delivery_shop_icon.svg" alt="">
+        </div>
+        <div id="imagenfondo">
+
+        </div>
+        <div class="textosucursales">
+            <h2>¡Conocé nuestras sucursales!</h2>
+            <br>
+            <br>
+            <a class="ver-sucursales" href="sucursales.html">
+                <button class="boton">Ver todas las sucursales</button>
+            </a>
+        </div>
+    </div>
+    </div>
+
+
+
+    <a href="https://api.whatsapp.com/send?phone=1161132483" class="btn-wsp" target="_blank"><i
+            class='bx bxl-whatsapp'></i>
+        <i class="icon-whatsapp"></i>
+    </a>
+
+</body>
+
+</html>
