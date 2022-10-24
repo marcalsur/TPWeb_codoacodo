@@ -84,7 +84,8 @@ nav ul{
     width: 100%;
     height: 100%;
     object-fit: cover;
-
+    
+    
 }
 
 
@@ -155,7 +156,6 @@ nav ul{
     list-style-type: none;
     align-self: center;
     justify-self: center;
-    
     width: 50%;
     height: 70%;
     margin: 5px;
@@ -165,14 +165,13 @@ nav ul{
 
 #especiales{
     grid-column: 6/8;
-    grid-row: 2/4;
-    
+    grid-row: 2/4;    
     list-style-type: none;
     align-self: center;
     justify-self: center;
-    
     width: 50%;
     height: 70%;
+    margin: 5px;
 }
 
 .listado{
@@ -287,7 +286,7 @@ nav ul{
     grid-column: 1/9;
     grid-row: 1/7;
     position: relative;
-    background-image: url(../img/Fondo2.svg);
+    background-image: url(../img/Fondo2.svg); /*Fondo de seccion sucursales con opacity para efecto*/
     background-size: 300px 300px;
     opacity: 0.1;
 }    
@@ -405,17 +404,19 @@ a.ver-sucursales {
         width: 100%;
        }
 
-       header, #logo, nav ul a{
+       header, nav ul a{
         display: inline-block;
         background-color:rgb(125, 56, 50);
+       
        }
-       #logo, nav ul a{
+       #logo, nav ul {
         width: 100%;
         background-color:rgb(125, 56, 50);
        }
 
-}
+    }
 
+    
 @media only screen and (max-width: 700px){
   
 
@@ -499,11 +500,14 @@ a.ver-sucursales {
    #clasicas{
     grid-column: 2/5;
     width: 100%;
+    align-self: stretch;
+        
    }
 
    #especiales{
     grid-column: 6/-1;
     width: 100%;
+    align-self: stretch;
    }
 
 
@@ -540,6 +544,13 @@ a.ver-sucursales {
 
    .boton{
     font-size: 12px;
+   }
+
+   .btn-wsp{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 25px;
    }
    
 }
