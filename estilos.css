@@ -5,7 +5,7 @@
     padding: 0%;
     box-sizing: border-box;
 }
-body{
+.body{
     position: absolute;
     left:0px;
     top:0px;
@@ -20,10 +20,26 @@ body{
  text-decoration: none;
  color: white;
 }
+.nav{
+        display: flex;    
+        word-wrap: break-word;
+        word-spacing: .01rem;
+        color:#fff;
+        justify-content: flex-end;
+    }
 
-
+    .menu{
+        font-family: 'Antonio', sans-serif;
+        text-decoration: none;
+        color: #fff;
+        font-weight: 400;
+        font-size: 1.8rem;
+        letter-spacing: .5px; /*espacio entre letras*/
+        padding: 0.5em;
+    }
+  
 .form{
-    background-color: #fff;
+    background-color:none;
     width: 90%;
     margin: auto;
     max-width: 400px;
@@ -45,7 +61,6 @@ body{
     justify-self: left;
     align-self: center;
     text-align: center;
-    background-color: rgb(79, 177, 184);
     font-size: 1.9rem;
     margin-bottom: .4em;
    
@@ -96,6 +111,18 @@ margin-bottom: .5em;
     justify-self: space-around;
 }
 
+.footer{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logos{
+    height: 100px;
+    margin-bottom: 0.1rem;
+}
 @media (max-width: 450px) {
     .form{ 
 padding: 3.5em 1em;
