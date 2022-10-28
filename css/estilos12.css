@@ -4,8 +4,12 @@
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
+    font-size:62.5%;
+    overflow: hidden;
+    /* overflow-x:hidden;
+    overflow-y:hidden; */
 }
-.body{
+/* .body{
     position: absolute;
     left:0px;
     top:0px;
@@ -14,13 +18,14 @@
     align-items: center;
     justify-content: center;
     padding: 30px;
- min-height: 100vh;
- width: 100%;
- display:flex;
- text-decoration: none;
- color: white;
-}
-.nav{
+    min-height: 100vh;
+    width: 100%;
+    display:flex;
+    text-decoration: none;
+    color: white; 
+
+}*/
+/*.nav{
         display: flex;    
         word-wrap: break-word;
         word-spacing: .01rem;
@@ -34,10 +39,67 @@
         color: #fff;
         font-weight: 400;
         font-size: 1.8rem;
-        letter-spacing: .5px; /*espacio entre letras*/
+        letter-spacing: .5px;
         padding: 0.5em;
-    }
+    }*/
   
+    header{
+        display: grid;
+        background-color: rgb(125, 56, 50);
+        width: 100%;
+        height: 125px; /*ver si es mejor otra escala*/
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 50% 50%;
+        align-items: center;
+        overflow: visible;
+    }
+    
+    #logo{
+        grid-column: 1/3;
+        grid-row: 1/3;
+        text-align: center;
+            
+    }
+    
+    .logo2{
+        width: 150px;
+        height: 90%;
+        
+    }
+    
+    #nav{
+        grid-column: 3/6;
+        grid-row: 1/3;
+        word-wrap: break-word;
+        word-spacing: 3rem; /*espacio entre palabras*/
+        
+    }
+    
+    nav ul{
+        display: inline-flex;
+        list-style-type: none;
+        
+    }
+    
+    .menu{
+        font-family: 'Roboto Condensed', sans-serif;
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        font-size: 1.8rem;
+        letter-spacing: 1.2px; /*espacio entre letras*/
+        padding: 1em;
+        
+    
+    }
+    
+    .menu:hover{
+        color: peru;
+        font-weight: 400;
+        transition: all 0.5s ease;
+        
+    }
+
 .form{
     background-color:none;
     width: 90%;
@@ -61,13 +123,14 @@
     justify-self: left;
     align-self: center;
     text-align: center;
-    font-size: 1.9rem;
+    font-size: 4rem;
     margin-bottom: .4em;
+    color: white;
    
 }
 .form_input{
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 2rem;
     padding: 0.8em 1em;
     outline: none;
     border: none;
@@ -88,11 +151,11 @@ margin-bottom: .5em;
     background-color: #089fe0;
     color: #fff;
     border: none;
-    font-weight: 300;
     padding: .7em 0;
     border-radius: .2em;
     cursor: pointer;
     font-weight: 400;
+    font-size: 2rem;
   
 
 }
@@ -111,21 +174,116 @@ margin-bottom: .5em;
     justify-self: space-around;
 }
 
+h3{
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0px 0px 13px rgb(0 0 0 / 62%);
+}
+
 .footer{
     width: 100%;
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    align-content: center;
+
 }
+
+h5{
+    font-size: 1.8rem;
+    text-align: center;
+    color: white;
+    
+}
+
 .logos{
     height: 100px;
     margin-bottom: 0.1rem;
 }
-@media (max-width: 450px) {
-    .form{ 
-padding: 3.5em 1em;
 
+#menu, #menu-check{
+    display: none;
+    background-color:rgb(125, 56, 50);
+}
+
+@media only screen and (max-width: 900px){
+    header, nav ul a{
+        display: inline-block;
+        background-color:rgb(125, 56, 50);
+       
+       }
+       #logo, nav ul {
+        width: 100%;
+        background-color:rgb(125, 56, 50);
+       }
+}
+
+@media only screen and (max-width: 700px){
+    .form{ 
+        padding: 3.5em 1em;
     }
+    #menu-check:not(:checked) ~ nav {
+        visibility:hidden;
+        position: absolute;
+       }
+    
+       #menu-check:checked  ~ nav{
+        display: block;
+       }
+    
+       #menu{
+        display: block;
+        color: white;
+        background-color:rgb(125, 56, 50);
+        font-size: 6.5em;
+        font-weight: bold;
+        border-radius: 0.3em;
+        position: absolute;
+        right: 0.5em;
+        top: 3.5em;
+        font-family: 'Roboto Condensed', sans-serif;
+        z-index: 9999;
+       }
+    
+       #menu:hover{
+        color: peru;
+        background-color:rgb(125, 56, 50);;
+       }
+    
+       #menu-cerrar{
+        display: none;
+       }
+    
+       #menu-check:checked ~ label #menu-abrir{
+        display: none;
+       }
+    
+       #menu-check:checked ~ label #menu-cerrar{
+        display: block;
+       }
+    
+       header nav ul{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 70%;
+        width: 100%;
+        background-color: rgb(125, 56, 50);
+        padding-top: 13.5rem;
+        padding-right: 2.5em;
+        opacity: 0.8;
+        color: white;
+        font-size: 1.4rem;
+        z-index: 500;
+       }
+    
+       header nav ul a{
+        color: white;
+        background: none;
+       }
+    
+       header nav ul, header nav ul li{
+        display: block;
+        text-align: right;
+       }
 }
