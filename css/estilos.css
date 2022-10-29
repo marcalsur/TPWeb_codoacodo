@@ -421,6 +421,17 @@ a.ver-sucursales {
     
 }
 
+.nav2{
+    background-color:rgb(125, 56, 50);
+    height: 125px;
+    display:grid;
+    align-content: center;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    
+    }
 
 /*menu hamburguesa*/
 
